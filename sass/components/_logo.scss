@@ -1,0 +1,45 @@
+.head-hero {
+  @include for-size(tablet) {
+    @include font(inherit, 1.14, 500);
+  }
+
+  @media screen and (max-width: $tablet - 1) {
+    padding: 10px 0;
+  }
+}
+
+.logo {
+  text-decoration: none;
+  font-family: $logo-font-family;
+  font-style: $font-style;
+
+  font-size: 26px;
+  line-height: $line-height;
+  color: $active;
+}
+.logotip {
+  display: inline-block;
+  text-decoration: none;
+
+  font-family: $logo-font-family;
+  font-style: $font-style;
+  font-size: 26px;
+  line-height: $line-height;
+  color: $black;
+}
+.logo-white {
+  color: $white-2;
+}
+
+.logo-head {
+  display: inline-flex;
+  margin-right: 94px;
+
+  text-decoration: none;
+  font-family: $logo-font-family;
+  font-style: $font-style;
+
+  font-size: 26px;
+  line-height: $line-height;
+  color: $active;
+}

@@ -1,0 +1,169 @@
+.section-contentc {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $icons-bg-color;
+}
+
+.team-section {
+  flex-wrap: wrap;
+  list-style-type: none;
+  display: flex;
+}
+
+.img-team {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+  background: $white-2;
+  box-shadow: 0px 1px 3px $box-sh-team-1, 0px 1px 1px $box-sh-team-2,
+    0px 2px 1px $box-sh-team-3;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img-team:last-child {
+  margin-right: 0;
+}
+
+.img-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.link-title-developer {
+  font-family: $base-font-family;
+  text-align: center;
+  font-weight: $font-weight-hard;
+  font-size: 16px;
+  line-height: 19px;
+
+  letter-spacing: 0.03em;
+  color: $black;
+}
+
+.link-title-fron {
+  margin-top: 10px;
+  text-align: center;
+
+  font-family: $base-font-family;
+  font-weight: $font-wight-standart;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: $gray;
+}
+
+.link-title-marketing {
+  text-align: center;
+
+  font-family: $base-font-family;
+  font-weight: $font-weight-hard;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+
+  color: $black;
+}
+
+.link-title-mark {
+  margin-top: 10px;
+  text-align: center;
+
+  font-family: $base-font-family;
+  font-weight: $font-wight-standart;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: $gray;
+}
+
+.link-title-product {
+  text-align: center;
+
+  font-family: $base-font-family;
+  font-weight: $font-weight-hard;
+  font-size: 16px;
+  line-height: 1.18;
+
+  letter-spacing: 0.03em;
+
+  color: $black;
+}
+
+.link-title-des {
+  margin-top: 10px;
+  text-align: center;
+
+  font-family: $base-font-family;
+  font-weight: $font-wight-standart;
+  font-size: 16px;
+  line-height: 1.18;
+
+  color: $gray;
+}
+
+.link-title-desinger {
+  text-align: center;
+  font-family: $base-font-family;
+  font-weight: $font-weight-hard;
+  font-size: 16px;
+  line-height: 1.18;
+
+  letter-spacing: 0.03em;
+  color: $black;
+}
+
+.link-title-ui {
+  margin-top: 10px;
+
+  font-family: $base-font-family;
+  font-weight: $font-wight-standart;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $gray;
+}
+
+.team-ul {
+  justify-content: center;
+  display: flex;
+  list-style-type: none;
+}
+
+.team-li {
+  padding-top: 10px;
+}
+.team-li {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $gray;
+  transition: color 250ms $animation, box-shadow 250ms $animation,
+    background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    color: $white-2;
+    background-color: $active;
+  }
+}
+
+.svg-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

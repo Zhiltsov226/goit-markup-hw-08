@@ -1,0 +1,26 @@
+.container {
+  width: 1210px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(mobile) {
+    width: $mobile - 18px;
+  }
+
+  @include for-size(tablet) {
+    width: $tablet - 18px;
+  }
+
+  @include for-size(desktop) {
+    width: $desktop - 18px;
+  }
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
