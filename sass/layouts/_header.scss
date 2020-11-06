@@ -7,12 +7,12 @@
   @include for-size(tablet) {
     @include font(inherit, 1.14, 500);
   }
-
+  
   @media screen and (max-width: $tablet - 1) {
     padding: 10px 0;
   }
 }
-
+  
 .flex--header {
   @include flexbox(space-between, center);
 }
@@ -37,6 +37,7 @@
   }
 }
 
+  
 .header-nav__item {
   @media (max-width: $tablet - 1) {
     &:not(:last-child) {
@@ -50,14 +51,14 @@
     }
   }
 }
-
+  
 .header-nav__link {
   position: relative;
   display: inline-block;
   padding: 8px 0;
   color: inherit;
   transition: color $duration $timing-function;
-
+  
   &:hover,
   &:focus {
     color: $accent-color;
@@ -66,10 +67,10 @@
     padding: 32px 0;
   }
 }
-
+  
 .header-nav__link--accent {
   color: $accent-color;
-
+  
   &::after {
     position: absolute;
     bottom: -1px;
@@ -81,18 +82,18 @@
     border-radius: 2px;
   }
 }
-
+  
 .header-contacts {
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     @include font(12px, 1.17, 500);
     text-align: left;
-  }
+      }
 
   @include for-size(desktop) {
     @include flexbox;
   }
 }
-
+  
 .header-contacts__item {
   @media (max-width: $tablet - 1) {
     &:not(:last-child) {
@@ -106,7 +107,7 @@
     }
   }
 }
-
+  
 .header-contacts__link {
   display: inline-flex;
   align-items: center;
@@ -123,8 +124,8 @@
 }
 
 .header-contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
+    margin-right: 10px;
+    fill: currentColor;
 }
 .button-menu {
   display: inline-flex;
