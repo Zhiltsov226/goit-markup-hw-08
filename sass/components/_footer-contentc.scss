@@ -1,0 +1,135 @@
+.footer-contentc {
+  height: 252px;
+  background-color: $secondary-bg-color;
+}
+
+.fot-conteiner {
+  display: flex;
+}
+
+.addres {
+  margin-top: 60px;
+}
+
+.footer-way {
+  list-style-type: none;
+}
+
+.siti {
+  display: inline-block;
+  padding-top: 20px;
+
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: $font-weight-hard;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $white-2;
+}
+
+.way {
+  padding-top: 9px;
+  .link-mail {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: $base-font-family;
+    font-style: $font-style;
+    font-weight: $font-weight-hard;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition: color 250ms $animation, box-shadow 250ms $animation,
+      background-color 250ms $animation;
+    color: $color-nav-fot;
+
+    &:hover,
+    &:focus {
+      color: $active;
+    }
+  }
+}
+
+.way {
+  .link-tel {
+    display: inline-flex;
+    text-decoration: none;
+    font-family: $base-font-family;
+    font-style: normal;
+    font-weight: $font-weight-hard;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition: color 250ms $animation, box-shadow 250ms $animation,
+      background-color 250ms $animation;
+    color: $color-nav-fot;
+
+    &:hover,
+    &:focus {
+      color: $active;
+    }
+  }
+}
+
+.join-icon {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 70px;
+  margin-right: 94px;
+}
+
+.join {
+  display: inline-block;
+
+  font-family: $base-font-family;
+  font-style: normal;
+  font-weight: $font-weight-hard;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-2;
+}
+.fot-ul-icon {
+  list-style-type: none;
+  display: flex;
+  margin-top: 20px;
+}
+
+.fot-icon {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background: $rgba-ft-icon;
+  color: $white-2;
+  transition: color 250ms $animation, box-shadow 250ms $animation,
+    background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $active;
+  }
+}
+
+.fot-svg-icon {
+  transition: color 250ms $animation, box-shadow 250ms $animation,
+    background-color 250ms $animation;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

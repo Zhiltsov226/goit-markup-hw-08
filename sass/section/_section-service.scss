@@ -1,0 +1,38 @@
+.section-service {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 200px;
+  background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/new_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.link-active-service {
+  display: inline-block;
+  padding: 10px 32px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  min-width: 136px;
+  width: 200px;
+
+  font-family: $base-font-family;
+  font-style: $font-style;
+  font-weight: $font-weight-hard;
+  font-size: 16px;
+  line-height: 1.8;
+
+  background: $active;
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+  color: $white-2;
+}

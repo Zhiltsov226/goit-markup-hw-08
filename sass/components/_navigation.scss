@@ -1,0 +1,179 @@
+.site-nav {
+  list-style-type: none;
+  display: flex;
+
+  .iteam-header {
+    &:last-child {
+      list-style-type: none;
+      margin-right: 0px;
+    }
+
+    @media (max-width: $tablet - 1) {
+      margin-bottom: 60px;
+    }
+
+    @include for-size(tablet) {
+      @include flexbox(flex-start, center);
+    }
+
+    @media (max-width: $tablet) and (max-width: $desktop - 1) {
+      margin-left: 70px;
+      margin-right: 67px;
+    }
+
+    @include for-size(desktop) {
+      margin-left: 94px;
+      margin-right: 287px;
+    }
+  }
+
+  .iteam-header {
+    @media (max-width: $tablet - 1) {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @include for-size(tablet) {
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .link-active-styles {
+    padding: 32px 0;
+    margin-right: 50px;
+    display: block;
+  }
+
+  .link {
+    padding: 32px 0;
+    margin-right: 50px;
+    display: block;
+
+    &:hover,
+    &:focus {
+      color: $active;
+    }
+  }
+}
+
+.site-nav .current {
+  color: $active;
+}
+
+.link-active-styles {
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+
+  font-family: $base-font-family;
+  font-style: $font-style;
+  font-weight: $font-weight-hard;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: $black;
+  transition: color 250ms $animation, box-shadow 250ms $animation,
+    background-color 250ms $animation;
+
+  &:hover,
+  &:focus {
+    color: $active;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $active;
+
+    opacity: 0.7;
+    transition: opacity 250ms $animation;
+  }
+
+  @include for-size(tablet) {
+    padding: 32px 0;
+  }
+}
+
+.iteam-header {
+  .link {
+    display: block;
+    padding-bottom: 11px;
+    padding-top: 32px;
+    text-decoration: none;
+    font-family: $base-font-family;
+    font-style: $font-style;
+    font-weight: $font-weight-hard;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition: color 250ms $animation, box-shadow 250ms $animation,
+      background-color 250ms v$animation;
+    color: $black;
+  }
+
+  @include for-size(tablet) {
+    padding: 32px 0;
+  }
+}
+
+.btn-menu {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  fill: #000000;
+  transition: fill 250ms $animation;
+
+  &:hover,
+  &:focus {
+    fill: $active;
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.icon-cross {
+  display: none;
+}
+
+.btn-menu.is-open .icon-cross {
+  display: block;
+}
+
+.btn-menu.is-open .icon-burger {
+  display: none;
+}
+
+.menu-container {
+  background-color: $black;
+  text-align: center;
+
+  @media (max-width: $tablet - 1) {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 60px 0;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @include for-size(tablet) {
+    @include flexbox(space-between, center);
+  }
+}

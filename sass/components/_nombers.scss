@@ -1,0 +1,113 @@
+.auth-nav {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+
+  .iteam-header + .iteam-header {
+    margin-left: 50px;
+  }
+
+  .link-tel {
+    &:hover,
+    &:focus {
+      color: $active;
+      fill: $active;
+    }
+  }
+
+  .link-mail {
+    &:hover,
+    &:focus {
+      color: $active;
+      fill: $active;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    @include font(12px, 1.17, 500);
+    text-align: left;
+  }
+
+  @include for-size(desktop) {
+    @include flexbox;
+  }
+}
+
+.auth-nav {
+  .iteam-header {
+    @media (max-width: $tablet - 1) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+.iteam-header {
+  .link-tel {
+    display: inline-flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    text-decoration: none;
+    font-family: $base-font-family;
+    font-weight: $font-weight-hard;
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: $gray;
+    transition: color 250ms $animation, box-shadow 250ms $animation,
+      background-color 250ms $animation;
+  }
+}
+.iteam-header {
+  .link-mail {
+    display: inline-flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: $base-font-family;
+    font-weight: $font-weight-hard;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition: color 250ms $animation, box-shadow 250ms $animation,
+      background-color 250ms $animation;
+    color: $gray;
+  }
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-tel {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-tel {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: $base-font-family;
+  font-style: $font-style;
+  font-weight: $font-weight-hard;
+  font-size: 14px;
+  line-height: 1.14;
+
+  transition: color 250ms $animation, box-shadow 250ms $animation,
+    background-color 250ms $animation;
+  color: $color-nav-fot;
+
+  &:hover,
+  &:focus {
+    color: var(--active);
+  }
+}
